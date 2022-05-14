@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +14,6 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', [AdminController::class, 'getAdminPanel']);
+Route::get('/', [ProductController::class, 'getProducts']);
 Route::post('/del-form', [AdminController::class, 'delField']);
 Route::post('/save-form', [AdminController::class, 'saveField']);
